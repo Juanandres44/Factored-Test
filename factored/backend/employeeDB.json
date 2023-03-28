@@ -1,0 +1,59 @@
+{
+  "employees": [
+    {
+      "name": "John Doe",
+      "position": "CEO ",
+      "avatar": "https://api.dicebear.com/5.x/fun-emoji/svg?seed=Zoe",
+      "skills": [
+        "Java",
+        "Python",
+        "FastAPI",
+        "JS",
+        "C++"
+      ]
+    },
+    {
+      "name": "Jane Smith",
+      "position": "COO",
+      "avatar": "https://api.dicebear.com/5.x/fun-emoji/svg?seed=Loki",
+      "skills": [
+        "Java",
+        "Python",
+        "Power BI"
+      ]
+    },
+    {
+      "name": "Juan Santiago",
+      "position": "Frontend developer",
+      "avatar": "https://api.dicebear.com/5.x/fun-emoji/svg?seed=Ginger",
+      "skills": [
+        "HTML",
+        "CSS",
+        "React",
+        "JS"
+      ]
+    },
+    {
+      "name": "Megan Look",
+      "position": "Backend developer",
+      "avatar": "https://api.dicebear.com/5.x/fun-emoji/svg?seed=Mia",
+      "skills": [
+        "MongoDB",
+        "Flask",
+        "AWS",
+        "C++",
+        "Java",
+        "JS"
+      ]
+    },
+    {
+      "name": "Jack Factored",
+      "position": "Intern",
+      "avatar": "https://api.dicebear.com/5.x/fun-emoji/svg?seed=Bear",
+      "skills": [
+        "Java",
+        "Python"
+      ]
+    }
+  ]
+}
