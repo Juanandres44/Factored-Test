@@ -10,6 +10,13 @@
         "FastAPI",
         "JS",
         "C++"
+      ],
+      "skillValue": [
+        100,
+        80,
+        90,
+        85,
+        40
       ]
     },
     {
@@ -20,6 +27,11 @@
         "Java",
         "Python",
         "Power BI"
+      ],
+      "skillValue": [
+        95,
+        80,
+        100
       ]
     },
     {
@@ -31,6 +43,12 @@
         "CSS",
         "React",
         "JS"
+      ],
+      "skillValue": [
+        100,
+        100,
+        85,
+        90
       ]
     },
     {
@@ -44,6 +62,14 @@
         "C++",
         "Java",
         "JS"
+      ],
+      "skillValue": [
+        90,
+        80,
+        95,
+        50,
+        100,
+        60
       ]
     },
     {
@@ -52,7 +78,13 @@
       "avatar": "https://api.dicebear.com/5.x/fun-emoji/svg?seed=Bear",
       "skills": [
         "Java",
-        "Python"
+        "Python",
+        "HTML"
+      ],
+      "skillValue": [
+        80,
+        60,
+        100
       ]
     }
   ]

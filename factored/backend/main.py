@@ -1,15 +1,30 @@
 from fastapi import FastAPI, status, Response, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 import json
 
 app = FastAPI()
 
+origins = [
+    "http://localhost",
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 class Employee(BaseModel):
     name: str
     position: str
     avatar: str
     skills: list[str] = []
+    skillValue: list[int] = []
 
 
 # Load the JSON file
