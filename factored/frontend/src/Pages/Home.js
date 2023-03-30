@@ -72,7 +72,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     const fetchData = async () => {
-      const response = await fetch("http://127.0.0.1:8000/employees/");
+      const response = await fetch("/api/employees/");
       const newData = await response.json();
       setEmployees(newData);
       setLoading(false);

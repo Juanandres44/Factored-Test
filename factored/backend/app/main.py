@@ -6,14 +6,10 @@ import json
 
 app = FastAPI()
 
-origins = [
-    "http://localhost",
-    "http://localhost:3000",
-]
+
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -28,21 +24,21 @@ class Employee(BaseModel):
 
 
 # Load the JSON file
-with open("employeeDB.json") as f:
+with open("app/employeeDB.json") as f:
     employees = json.load(f)["employees"]
 
 
 @app.post("/employee/create/")
 async def create_employee(employee: Employee, response: Response):
     try:
-        with open("employeeDB.json", "r") as f:
+        with open("app/employeeDB.json", "r") as f:
             employees = json.load(f)
     except FileNotFoundError:
         employees = {"employees": []}
     
     employees["employees"].append(employee.dict())
     
-    with open("employeeDB.json", "w") as f:
+    with open("app/employeeDB.json", "w") as f:
         json.dump(employees, f, indent=2)
     
     response.status_code = status.HTTP_201_CREATED
